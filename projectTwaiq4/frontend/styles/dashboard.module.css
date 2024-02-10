@@ -1,0 +1,49 @@
+.body1{
+    background-image: url('../public/img/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.row{
+    margin: 100px;
+    padding: 100px;
+}
+.col{
+    
+    margin: 100px;
+    padding: 10px;
+
+}
+.avatarXl {
+   
+    border-radius: 50%;
+    display: inline-block;
+    background: #ced4da no-repeat center/cover;
+    position: relative;
+    text-align: center;
+    color: #868e96;
+    font-weight: 600;
+    vertical-align: bottom;
+}
+.cards1 {
+    background-color: #fff;
+    border: 0 solid #eee;
+    border-radius: 0;
+}
+.cards1 {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+}
+.cardBody {
+    padding: 1.25rem;
+}
+.tileLink {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 30;
+}
