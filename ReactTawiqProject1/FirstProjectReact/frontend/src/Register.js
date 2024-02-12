@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import {Link} from 'react-router-dom';
+import { Image } from "react-bootstrap";
+import Logo from './components/img/twlogo.png'
 
 export default function Register() {
   
   return (
     <div className="Register">
-      <img
-        src="https://tawakkalna.sdaia.gov.sa/assets/img/illustrations/twlogo.png"
+      <Image
+        src={Logo}
         style={{
           width: "15rem",
           marginLeft: "40rem",
@@ -17,6 +19,7 @@ export default function Register() {
           marginTop: "10px",
           padding: "30px",
         }}
+        alt=""
       />
       <Card
         style={{

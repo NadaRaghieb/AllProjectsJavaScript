@@ -5,7 +5,9 @@ import Card from "react-bootstrap/Card";
 import {Link} from 'react-router-dom';
 import { useNavigate } from "react-router";
 import './login.css';
+import Logo from './img/twlogo.png'
 import axios from "axios";
+import { Image } from "react-bootstrap";
 
 export default function Login() {
   const [nationalId, setNationalId] = useState("");
@@ -39,8 +41,8 @@ export default function Login() {
   return (
     
     <div className="Login">
-      <img className="imgTwaLogin"
-        src="https://tawakkalna.sdaia.gov.sa/assets/img/illustrations/twlogo.png"/>
+      <Image className="imgTwaLogin"
+        src={Logo} alt=""/>
       <Card className="cardTwaLogin">
         <Card.Body>
           <Form onSubmit={handleSubmit}>

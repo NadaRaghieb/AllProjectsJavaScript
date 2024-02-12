@@ -5,9 +5,11 @@ import App from './App';
 
 
 ReactDOM.render(
-  
-	<Router>
+	
+    <Router>
 		<App />
-	</Router>,
+	</Router>
+,
+	
   document.getElementById("root")
 );

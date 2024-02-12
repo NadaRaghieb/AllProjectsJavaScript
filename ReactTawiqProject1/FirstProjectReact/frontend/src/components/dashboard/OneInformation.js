@@ -20,7 +20,7 @@ export default function OneInformation() {
       const oneInfo = info.userInfo.find((oneInfo) => oneInfo.name === name);
       setData(oneInfo.data);
     })();
-  }, []);
+  });
   return (
     <>
       <Header/>

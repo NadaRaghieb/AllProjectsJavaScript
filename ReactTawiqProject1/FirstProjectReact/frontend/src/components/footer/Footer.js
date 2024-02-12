@@ -13,12 +13,12 @@ const Footer = () => {
                     <div  className="row no-gutters justify-content-between fs--1 mt-4 mb-3">
                         <div className="col-12 col-sm-auto text-left">
                             <ul className="nav1 footer-nav">
-                                <li className="nav2"><a href="#"  className="nav3 nav-link active"  >Home</a></li>
-                                <li className="nav2"><a href="#"  className="nav3 nav-link" >About</a></li>
-                                <li className="nav2"><a href="#" className="nav3 nav-link" >Tawakkalna Services</a></li>
-                                <li className="nav2"><a href="#"  className="nav3 nav-link" >How Tawakkalna Works</a></li>
-                                <li className="nav2"><a href="#"  className="nav3 nav-link" >FAQs</a></li>
-                                <li className="nav2"><a href="#"  className="nav3 nav-link" >Contact Us</a></li>
+                                <li className="nav2">Home</li>
+                                <li className="nav2">About</li>
+                                <li className="nav2">Tawakkalna Services</li>
+                                <li className="nav2">How Tawakkalna Works</li>
+                                <li className="nav2">FAQs</li>
+                                <li className="nav2">Contact Us</li>
                             </ul>
                         </div>
                         <div className="col col-12 col-sm-auto text-center">

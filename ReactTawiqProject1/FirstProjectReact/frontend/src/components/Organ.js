@@ -26,7 +26,7 @@ export default function Organ() {
 <Button 
                     variant="outline-danger"
                     style={{
-                     width: "20%", marginLeft: "22px", marginLeft: "410px",
+                     width: "20%", marginRight: "22px", marginLeft: "410px",
                     }}
                     type="submit"
                   >
@@ -37,7 +37,7 @@ export default function Organ() {
                   <Button
                     variant="primary"
                     style={{
-                     width: "20%", marginLeft: "22px",marginRight: "400px",
+                     width: "20%", marginRight: "22px",marginLight: "400px",
                     }}
                     type="submit"
                   >

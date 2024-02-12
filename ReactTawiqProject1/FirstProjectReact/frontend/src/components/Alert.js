@@ -1,4 +1,4 @@
-import {Alert, Button } from 'react-bootstrap';
+import {Alert, Image } from 'react-bootstrap';
 import { useState } from 'react';
 import alert1 from './img/alert1.png';
 import { useNavigate} from 'react-router-dom'
@@ -16,7 +16,7 @@ function AlertDismissibleExample() {
           <br></br> users in accordance with the Ministry of Health data through encrypted personal data.
           </Alert.Heading>
           <hr></hr>
-          <img src={alert1}/>
+          <Image src={alert1} alt=""/>
         </Alert>
       );
     }

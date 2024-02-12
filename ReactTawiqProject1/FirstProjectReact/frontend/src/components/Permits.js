@@ -1,9 +1,8 @@
-import { Component } from "react";
 import React, { useState, useEffect } from "react";
 import './Permits.css';
  import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Card, Container, Row, Col, Image } from 'react-bootstrap';
 import cart from './img/cart.png';
 import car from './img/medical.png';
 import medical from './img/medical.png';
@@ -12,12 +11,8 @@ import gathering from './img/gathering.png';
 import help from './img/help.png';
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-// import tr1 from './img/tr1.png';
 import MyPerCard from "./MyPerCard";
-// import arro from './img/arro.png';
-// import {Link,usePermi
-// }  from "react-router-dom";
-// const per=usePermi()
+
     export default function Permits() {
         const [data, setData] = useState(null);
         useEffect(() => {
@@ -37,7 +32,7 @@ import MyPerCard from "./MyPerCard";
   <Row>
     <Col>
     <Card className="myCard" >
-        <img className="myImg" src={cart}/>
+        <Image className="myImg" src={cart} alt=""/>
         <div style={{textAlign: "left", marginRight: "80px", marginLeft: "22px"}}>
         <h5> Supplies </h5>
         <h6> Request permit for supplies </h6>
@@ -47,7 +42,7 @@ import MyPerCard from "./MyPerCard";
     </Col>
 <Col>
     <Card className="myCard">
-        <img className="myImg" src={car} alt="" />
+        <Image className="myImg" src={car} alt="" />
     <div style={{textAlign: "left", marginRight: "20px", marginLeft: "20px"}}>
         <h5> Temporary permit <br></br>for a driver </h5>
         <h6> This service is only available to work or student permit holders </h6>
@@ -57,7 +52,7 @@ import MyPerCard from "./MyPerCard";
 </Col>
     <Col>
     <Card className="myCard">
-        <img className="myImg" src={medical} alt="" />
+        <Image className="myImg" src={medical} alt="" />
         <div style={{textAlign: "left", marginRight: "50px", marginLeft: "20px"}}>
         <h5> Emergency Medical Permit </h5>
         <h6> This service is only for medical emergencies </h6>
@@ -93,7 +88,7 @@ import MyPerCard from "./MyPerCard";
     <Col>
     <Link to ="/permissons" style={{textDecoration:'none ', color:'black'}}>
     <Card className="Card" style={{ border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
-        <img className="myImg" src={gathering} alt="" />
+        <Image className="myImg" src={gathering} alt="" />
         <div style={{textAlign: "left", marginRight: "50px", marginLeft: "20px"}}>
         <h5> Auto health status verification permits </h5>
         <h6> This permit is intended for officials of places where there is a gathering </h6>

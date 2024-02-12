@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Main.css';
-import { Col, Row, Container, Card, Button } from 'react-bootstrap';
+import { Col, Row, Container, Card, Button, Image } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import family from '../img/family.png';
 import health from '../img/health.png';
@@ -36,7 +36,7 @@ export default function Main() {
             <Col xs={6} md={3}>
               <Card id="green" border="success" style={{ width: '19rem', border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
                 <Card.Body>
-                  <Card.Title id="immune"><img src={barcode1} style={{width: "40px", marginLeft: "1px"}}/><br></br>
+                  <Card.Title id="immune"><Image src={barcode1} style={{width: "40px", marginLeft: "1px"}} alt=""/><br></br>
                    Immune <br></br>                                                                                              
                    Last updated<br></br>
                    Wed, Nov 01:42 PM</Card.Title>
@@ -65,17 +65,17 @@ export default function Main() {
             <Col xs={6} md={3}>
             <div className="mb-2">
             <Link to="/alert">
-    <Button id="health" style={{ width: '19rem', paddingRight: "40px",textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><img src={health} style={{ width: "30px", marginTop: "10px", marginRight: "40px" ,marginLeft: "1px", marginBottom: "10px"}}/>
+    <Button id="health" style={{ width: '19rem', paddingRight: "40px",textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><Image src={health} style={{ width: "30px", marginTop: "10px", marginRight: "40px" ,marginLeft: "1px", marginBottom: "10px"}} alt=""/>
  Health Condition <h6>Health status details and colors</h6>
      </Button>{' '}
      </Link>
-    <Button id="family" style={{ width: '19rem', paddingLeft: "1px", textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><img src={family} style={{ width: "30px", marginTop: "10px", marginRight: "30px" , marginBottom: "10px"}}/>
+    <Button id="family" style={{ width: '19rem', paddingLeft: "1px", textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><Image src={family} style={{ width: "30px", marginTop: "10px", marginRight: "30px" , marginBottom: "10px"}} alt=""/>
     Family Members and Sponsored Members
     </Button>{' '}
-    <Button className="covid" style={{ width: '19rem', paddingRight: "50px", textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><img src={MOH} style={{ width: "30px", marginTop: "10px", marginRight: "50px" ,paddingLeft: "1px"}}/>
+    <Button className="covid" style={{ width: '19rem', paddingRight: "50px", textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><Image src={MOH} style={{ width: "30px", marginTop: "10px", marginRight: "50px" ,paddingLeft: "1px"}} alt=""/>
     MOH COVID-19 <br></br>Dashboard
     </Button>{' '}
-    <Button className="covid" style={{ width: '19rem', textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><img src={qr} style={{ width: "30px", marginTop: "10px", marginRight: "10px" }}/>
+    <Button className="covid" style={{ width: '19rem', textAlign: "center", border: 'black 2px', borderRadius: '7px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }} variant="succuss" size="lg"><Image src={qr} style={{ width: "30px", marginTop: "10px", marginRight: "10px" }} alt=""/>
     Use QR Code to visit the gathering place
     </Button>{' '}
   </div>
