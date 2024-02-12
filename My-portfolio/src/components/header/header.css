@@ -48,11 +48,6 @@ header {
     overflow: hidden;
     /* padding: 0rem 1.5rem 1.5rem 1.5rem; */
 }
-.me {
-    transform: rotateY(90deg);
-
-}
-
 
 /* =============== SCROLL DOWN =============== */
 .scroll__down {

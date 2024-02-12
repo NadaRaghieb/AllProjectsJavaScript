@@ -1,9 +1,10 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/LogoNada.png'
+import MyLogo from '../../assets/MyLogo.png'
 import {FaAward} from 'react-icons/fa' 
 import {MdOutlineCastForEducation} from 'react-icons/md'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import { Image } from 'react-bootstrap'
 const About = () => {
   return (
     <section id='about'>
@@ -13,7 +14,7 @@ const About = () => {
       <div className='container about__container'>
        <div className='about__me'>
           <div className="about__me-image">
-            <img src={ME} alt='about Image'/>
+            <Image src={MyLogo} alt='about Image'/>
           </div>
       </div>
 

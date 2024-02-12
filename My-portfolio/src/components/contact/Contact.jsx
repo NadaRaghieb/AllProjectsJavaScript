@@ -17,15 +17,15 @@ const Contact = () => {
           <HiOutlineMail className='contact_option-icon'/>
           <h4>Email</h4>
           <h5>nadaraghieb@gmail.com</h5>
-          <a href='mailto:nadaraghieb@gmail.com' target={'_blank'}>Send a message</a>
-          <h4></h4>
+          <a href='mailto:nadaraghieb@gmail.com' target='_blank' rel="noreferrer" >Send a message</a>
+          
         </article>
         <article className='contact__options'>
           <BsWhatsapp className='contact_option-icon'/>
           <h4>WhatsApp</h4>
           <h5>+966548285301</h5>
-          <a href='http://api.whatsapp.com/send?phone=966548285301' target={'_blank'}>Send a message</a>
-          <h4></h4>
+          <a href='http://api.whatsapp.com/send?phone=966548285301' target='_blank' rel="noreferrer" >Send a message</a>
+          
         </article>
        
        
@@ -42,5 +42,4 @@ const Contact = () => {
     </section>
   )
 }
-
 export default Contact
