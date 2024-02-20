@@ -1,20 +1,25 @@
  .about__container {
      display: grid;
-     grid-template-columns:35% 50%;
-     gap: 15%;
+     grid-template-columns:20% 50%;
+     gap: 20%;
  }
 
  .about__me {
-     width: 100%;
+    width: 20rem;
+    height: 20rem;
      aspect-ratio: 1/1;
-     border-radius: 2rem;
-     background: linear-gradient(45deg, transparent, var(--color-primary),transparent);
+     /* border-radius: 10rem; */
+    
+    border-radius: 50% 60% 50% 60%;
+    transition: all 400ms ease;
+   
+     background: linear-gradient(75deg, #46695A,transparent);
      display: grid;
      place-items: center;
  }
 
  .about__me-image {
-     border-radius: 2rem;
+    border-radius: 60% 50% 60% 50%;
      overflow: hidden;
      transform: rotate(10deg);
      transition: var(--transition);
@@ -23,30 +28,44 @@
      transform: rotate(0);
  }
 
- .about__cards {
+ /* .about__cards {
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(2, 1fr);
      gap: 1.5rem;
+    
+     
+     
+ }
+ .about__cards:hover{
+    transform: scale(1.1);
+    gap: 2rem;
+    
  }
 
  .about__card {
-     background: var(--color-bg-variant);
-     border: 1px solid transparent;
+    background: linear-gradient(75deg, #867363,transparent);
+     border: 2px solid transparent;
      border-radius: 1rem;
-     padding: 2rem;
+     padding: 1.4rem;
      text-align: center;
-     transition: var(--transition) ;
- }
+     border-color: var(--color-bg-variant);
+     
+     /* transition: var(--transition) ; */
+ /* }
 
  .about__card:hover {
+    border: 3px solid ;
+    border-radius: 4rem;
     background: transparent;
     border-color: var(--color-bg-variant);
     cursor: default;
+    transition: var(--transition);
+  
  }
 
  .about__icon {
-     color: var(--color-primary);
-     font-size:1.4rem;
+    
+     font-size:1.7rem;
      margin-bottom: 1rem;
  }
 
@@ -55,18 +74,29 @@
  }
 
  .about__card small {
-     font-size: 0.7rem;
-     color: var(--color-light);
+     font-size: 0.8rem;
+     
+
  }
+ .about__card p {
+    font-size: 0.8rem;
+    
+
+}  */
 
  .about__content p {
-     margin: 2rem 0 2.6rem;
-     color: var(--color-light);
+     margin: 1.0rem 0 1.6rem;
+     text-align: center
+    
+       
  }
 
  /* ============== MEDIA QUERIES (MEDIUM DEVICES) =================== */
 
 @media screen and (max-width: 1024px){
+    #about{
+        margin-top: -14rem;
+    }
     .about__container {
        grid-template-columns: 1fr;
        gap: 0; 
@@ -77,6 +107,8 @@
     }
 
     .about__content p {
+        font-family: Arial;
+        text-align:start;
         margin: 1rem 0 1.5rem;
     }
 }
@@ -84,17 +116,23 @@
 /* ============== MEDIA QUERIES (SMALL DEVICES) =================== */
 
 @media screen and (max-width: 600px){
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
+    #about{
+        width: 120vw;
+        margin-top: -14rem;
+        margin-left: 1rem;
+        
     }
-    .about__cards{
-        grid-template-columns: 1fr 1fr;
-    }
-    .about__content {
+    #about h2{
         text-align: center;
+        margin-right: 5rem;
+    }
+    .about__me{
+        display: none;
     }
     .about__content p {
-        margin: 1.5rem 0;
+        font-family: Arial;
+        text-align:start;
+        margin-left: 0.4rem;
+        padding: 0.4rem;
     }
 }

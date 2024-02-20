@@ -12,18 +12,18 @@
 }
 
 :root {
-    --color-bg: #372e26;
-    --color-bg-variant: #dfd6cb;
-    --color-primary: #867363;
-    --color-primary-variant:#483C32;
-    --color-white:#483C32;
-    --color-light: #483C32;
+    --color-bg: #344E43;
+    --color-bg-variant: #46695A;
+    --color-primary:#699D87;
+    --color-primary-variant:#94AEA3;
+    --color-white:#C6E9DA;
+    --color-light:#E2F3EC;
 
     --transition: all 400ms ease;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --container-width-sm: 100%;
    
 }
 
@@ -34,13 +34,13 @@ html{
     display:none;
 }
 
-body{
+/* body{
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
     background-color:rgb(118, 100, 89);
-}
+} */
 
 /* =================== GENERAL STYLES ================== */
 
@@ -50,38 +50,42 @@ body{
 }
 h1,h2,h3,h4,h5 {
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
     font-size: 2.5rem;
 }
-
+p{
+    font-family:'sans-serif';
+}
 section {
-    margin-top: 8rem;
+    margin-top: 15rem;
     height: 100vh;
 }
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--color-light);
+    /* color: var(--color-light); */
 }
 
 section > h2 {
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
     margin-bottom: 3rem;
 }
+
 
 .text-light {
    color: var(--color-light);
 }
 
 a {
-   color: var(--color-primary);
+   color: var(--color-bg-variant);
    transition: var(--transition)
 }
 
 a:hover {
-    color: var(--color-white)
+    color: var(--color-primary-variant)
 }
 .btn {
     width:max-content;
@@ -124,13 +128,13 @@ img {
 
 /* ============== MEDIA QUERIES (small DEVICES) =================== */
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
     .container{
         width: var(--container-width-sm);
     } 
     section >h2 {
         margin-bottom:2rem ;
     }
- }
+ } */
 
  

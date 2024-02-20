@@ -1,4 +1,4 @@
-header {
+/* header {
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
@@ -8,18 +8,12 @@ header {
    text-align: center;
    height: 100%;
    position:relative; 
-}
+} */
 
-/* =============== CAT =============== */
-.cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap:1.2rem ;
-    justify-content: center;
-}
+
 
 /* =============== HEADER SOCIALS =============== */
-.header__socials {
+/* .header__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,48 +28,151 @@ header {
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
-}
+} */
 
 /* =============== ME =============== */
-.me {
+/* .me { */
     /* background: linear-gradient(var(--color-primary), transparent); */
-    width: 22rem;
+    /* width: 22rem;
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 1rem;
     border-radius: 12rem 12rem 12rem 12rem;
-    overflow: hidden;
+    overflow: hidden; */
     /* padding: 0rem 1.5rem 1.5rem 1.5rem; */
-}
+/* } */
 
 /* =============== SCROLL DOWN =============== */
-.scroll__down {
+/* .scroll__down {
     position: absolute;
     right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
+} */
+
+
+.main__header{
+    width: 100vw;
+    height:calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+
+.main__header-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.main__header-left{
+    margin-top: -3rem;
+}
+.main__header-left h4{
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+    font-weight: 400;
+}
+
+.main__header-left p{
+    margin: 1rem 0 3.5rem;
+    font-size: 1.1rem;
+}
+
+.main__header-right{
+  display: grid;
+  place-items: center;
+  position: relative;  
+}
+
+.main__header-circle{
+    width: 35rem;
+    height: 35rem;
+    background: linear-gradient(75deg, #867363,transparent);
+    position: absolute;
+    border-radius: 50% 60% 50% 60%;
+    transition: all 400ms ease;
+   
+    
+}
+.main__header-image img{
+    
+    transform: rotate(0);
+    border-radius: 60% 50% 60% 50%;
+}
+
+.main__header-image img:hover{
+    overflow: hidden;
+    transform: rotate(20deg);
+}
+/* =============== CAT =============== */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap:1.2rem ;
+    justify-content: center;
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) =================== */
 
 @media screen and (max-width: 1024px){
     
-    header {
-        height: 68vh;
+ 
+    .main__header-right .main__header-circle {
+        width: 16rem;
+        height: 16rem;
+        margin-left: 20px;
+        margin-top: -20rem;
+    } 
+    .main__header-image{
+        width: 16rem;
+    }
+    .main__header-container .main__header-left{
+        margin-top: -25rem;
+        margin-right: -8rem;
+        
+    }
+    .main__header-left h1{
+        margin-bottom: 2.3rem;
+    }
+    .main__header-left p{
+        font-family: Arial;
     }
 }
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) =================== */
 
 @media screen and (max-width: 600px){
-    header {
-        height: 100vh;
-    }
+    .main__header-container .main__header-left p{
+        display: flex;
+        justify-content: space-evenly;
+        text-align:start;
+        font-family: Arial;
+        margin: 0.3rem 0;
+        font-size: .9rem;
 
-    .header__socials, .scroll__down {
+    }
+    .main__header-left h1{
+        font-size: 1.2rem;
+    }
+    .main__header-container .main__header-left {
+        width: 100vw;
+        height:calc(150vh - 10rem);
+       margin-top: 3rem;
+       margin-left: 2rem;
+       margin-right: 1.1rem;
+       
+    }
+  
+
+    .main__header-circle{
         display: none;
     }
 }
