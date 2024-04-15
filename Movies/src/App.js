@@ -5,11 +5,14 @@ import NavBar from './components/NavBar';
 import MoviesList from './components/MoviesList'
 import MovieDetails from './components/MovieDetails'
 import  axios  from 'axios';
+// import {useSelector, useDispatch} from 'react-redux'
 
 
 function App() {
 const[movies, setMovies]=useState([])
 const[pageCount, setPageCount]=useState(0)
+
+// const dispatch= useDispatch()
   // get all Movies
   const getAllMovies= async () =>{
     const res = await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=52ef927bbeb21980cd91386a29403c78&language=ar')
@@ -24,6 +27,7 @@ const[pageCount, setPageCount]=useState(0)
   }
   useEffect(()=>{
     getAllMovies()
+    
   },[])
   
   // search in API
