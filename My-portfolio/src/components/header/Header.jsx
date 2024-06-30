@@ -24,7 +24,7 @@ const Header = () => {
         </p>
         <p>Enjoy browsing through my portfolio. If you have any questions or inquiries, feel free to reach out. I'm excited to work on new projects and collaborate with you in the near future.</p>
         <p>Thank you for your time and interest, and I look forward to sharing my work with you.</p>
-        <CTA/>
+        <CTA />
       </div>
      
       <div className="main__header-right">
