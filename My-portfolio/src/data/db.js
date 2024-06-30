@@ -1,34 +1,20 @@
 export const projects = [
     {
-      image: "./Images/template1.png",
+      image: "",
       heading: "Yoga Template",
-      link: "https://ateevduggal.github.io/yoga-template/",
+      link: "",
     },
     {
-      image: "./Images/template2.png",
+      image: "",
       heading: "Consultancy Template",
-      link: "https://ateevduggal.github.io/Consultancy---Template/",
+      link: "",
     },
     {
-      image: "./Images/template3.png",
+      image: "",
       heading: "Restaurant Template",
-      link: "https://ateevduggal.github.io/Restaurant/",
+      link: "",
     },
-    {
-      image: "./Images/SPA.png",
-      heading: "Tekolio SPA",
-      link: "https://tekolio-react-9tjfdrwwu-ateevduggal.vercel.app/",
-    },
-    {
-      image: "./Images/dictionary-app.png",
-      heading: "Dictionary App",
-      link: "https://dictionary-app-xi.vercel.app/",
-    },
-    {
-      image: "./Images/google.png",
-      heading: "Live Wildfire App using NASA API",
-      link: "https://dictionary-app-xi.vercel.app/",
-    },
+   
   ];
   export const UDesigner=[
    { id:0,

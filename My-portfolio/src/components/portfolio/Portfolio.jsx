@@ -50,7 +50,7 @@ const Portfolio = () => {
             })}
             <div className="text-center col-12 mt-5">
               <a
-                href="https://github.com/Ateevduggal?tab=repositories"
+                href=""
                 target="true"
               >
                 <button
