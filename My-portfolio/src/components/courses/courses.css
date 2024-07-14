@@ -46,30 +46,28 @@
 }
 
 .courses__list p {
-   font-size: 0.9rem;
    color: var(--color-bg-variant);
    transition: var(--transition)
 }
 
-/* ============== MEDIA QUERIES (MEDIUM DEVICES) =================== */
-
-@media screen and (max-width: 1024px){
-  .courses__container {
-     grid-template-columns: 1fr 1fr;
-     gap: 2rem;
-  }
-
-  .courses {
-     height:auto;
-  }
-}
-
-/* ============== MEDIA QUERIES (small DEVICES) =================== */
-
- @media screen and (max-width: 600px){
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
    .courses__container {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+     grid-template-columns: 1fr;
    }
-
-} 
+ 
+   .courses {
+     margin-bottom: 2rem;
+   }
+ 
+   .courses__head h3 {
+     font-size: 1.2rem;
+   }
+ }
+ 
+ /* Tablet Devices */
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+   .courses__container {
+     grid-template-columns: repeat(2, 1fr);
+   }
+ }

@@ -54,15 +54,15 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
 }
 p{
     font-family:'sans-serif';
+    font-size: 1.1rem;
 }
 section {
-    margin-top: 15rem;
-    height: 100vh;
-}
+    margin-top: 40rem;
+  }
 
 section > h2, section > h5 {
     text-align: center;
@@ -70,7 +70,6 @@ section > h2, section > h5 {
 }
 
 section > h2 {
-    /* color: var(--color-primary); */
     margin-bottom: 3rem;
 }
 
@@ -114,27 +113,19 @@ img {
     width: 100%;
     object-fit: cover;
 }
-
-/* ============== MEDIA QUERIES (MEDIUM DEVICES) =================== */
-
-@media screen and (max-width: 1024px){
-   .container{
-       width: var(--container-width-md);
-   } 
-   section {
-       margin-top:6rem ;
-   }
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+  section {
+    margin-bottom: 2.5rem;
+  }
 }
 
-/* ============== MEDIA QUERIES (small DEVICES) =================== */
-
-/* @media screen and (max-width: 600px){
-    .container{
-        width: var(--container-width-sm);
-    } 
-    section >h2 {
-        margin-bottom:2rem ;
-    }
- } */
+/* Tablet Devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
+}
 
  

@@ -1,105 +1,85 @@
-export const projects = [
-    {
-      image: "",
-      heading: "Yoga Template",
-      link: "",
-    },
-    {
-      image: "",
-      heading: "Consultancy Template",
-      link: "",
-    },
-    {
-      image: "",
-      heading: "Restaurant Template",
-      link: "",
-    },
-   
-  ];
+
   export const UDesigner=[
    { id:0,
     courseName:'Build Dynamic User Interfaces (UI) for Websites',
-    certificate:'https://www.coursera.org/account/accomplishments/records/GTLMJ3FQGA3H'
+    certificate:'#'
   },
   {
     id:1,
     courseName:'Create High-Fidelity Designs and Prototypes in Figma',
-    certificate:'https://www.coursera.org/account/accomplishments/records/A24EGNHVVGBW'
-  },
+    certificate:'#'  },
   {
     id:2,
     courseName:'Web Design: Wireframes to Prototypes',
-    certificate:'https://www.coursera.org/account/accomplishments/records/8GVUPR7AV9AQ'
-  },
+    certificate:'#'  },
   {
     id:3,
     courseName:'UX Design Fundamentals',
-    certificate:'https://www.coursera.org/account/accomplishments/records/FV6T36T9R89P'
-  },
+    certificate:'#'  },
   {
     id:4,
     courseName:'Visual Elements of User Interface Design',
-    certificate:'https://www.coursera.org/account/accomplishments/records/GNE8NG8JYM83'
-  },
+    certificate:'#'  },
 {
   id:5,
   courseName:'Visual Elements of User Interface Design',
-  certificate:'https://www.coursera.org/account/accomplishments/records/YHAHNB739449'
-}]
+  certificate:'#'}]
 
 export const webDeveloper=[{
   id:0,
   courseName:'Web Design: Strategy and Information Architecture',
-  certificate:'https://www.coursera.org/account/accomplishments/records/FPXDEKNUL76P'
-},
+  certificate:'#'},
 {
   id:1,
   courseName:'Interactivity with JavaScript',
-  certificate:'https://www.coursera.org/account/accomplishments/records/TM3UHBU5FAYF'
-},
+  certificate:'#'},
 {
   id:2,
   courseName:'Introduction to CSS3',
-  certificate:'https://www.coursera.org/account/accomplishments/records/RLZN48VBBZ42'
-},
+  certificate:'#'},
 {
   id:3,
   courseName:'Web Application Development with JavaScript and MongoDB',
-  certificate:'https://www.coursera.org/account/accomplishments/records/LT4P8YXTBDBC'
-},
+  certificate:'#'},
 {
   id:4,
   courseName:'Web Design for Everybody Capstone',
-  certificate:'https://www.coursera.org/account/accomplishments/records/88P4WB52RQMP'
-},
+  certificate:'#'},
 {
   id:5,
   courseName:'Introduction to HTML5',
-  certificate:'https://www.coursera.org/account/accomplishments/records/UMQ6TJLKF4XW'
-},
+  certificate:'#'},
 ]
+// الافضل ان يكون ملف الصور في مجلد public
+
 export const image=[{
   id:0,
   imageName:'Git',
-  img:'./course/Git101.png'
+  img:'#'
 },
 {
   id:1,
   imageName:'Node.js',
-  img:'./course/NodeJs.png'
+  img:'#'
 },
 {
   id:1,
   imageName:'SQL 101',
-  img:'./course/sql101.png'
+  img:'#'
 },
 {
   id:1,
   imageName:'SQL 102',
-  img:'./course/SQL102.png'
+  img:'#'
 },
 {
   id:1,
   imageName:'SQL 103',
-  img:'./course/SQL103.png'
+  img:'#'
 }]
+
+export const cardsData = [
+  { title: 'Card 1', description: 'This is the first card.', isActive: true },
+  { title: 'Card 2', description: 'This is the second card.', isActive: false },
+  { title: 'Card 3', description: 'This is the third card.', isActive: false },
+];
